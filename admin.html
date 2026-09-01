@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🔐 Student Admin</h1>
+  <p>Administrator Panel</p>
+</header>
+
+<div id="loginArea" class="form">
+
+  <h2>Admin Login</h2>
+
+  <input
+    id="email"
+    type="email"
+    placeholder="Admin Email"
+  >
+
+  <input
+    id="password"
+    type="password"
+    placeholder="Password"
+  >
+
+  <button class="primary" id="loginBtn">
+    Login
+  </button>
+
+  <p id="loginMessage"></p>
+
+</div>
+
+
+<div id="adminArea" style="display:none">
+
+  <div class="form">
+
+    <h2 id="formTitle">Add Student</h2>
+
+    <input id="studentId" type="hidden">
+
+    <input id="name" placeholder="Full Name">
+
+    <input id="school" placeholder="School">
+
+    <input id="studentClass" placeholder="Class">
+
+    <input id="roll" placeholder="Roll">
+
+    <input id="section" placeholder="Section">
+
+    <input id="age" type="number" placeholder="Age">
+
+    <input id="dob" type="date">
+
+    <input id="gender" placeholder="Gender">
+
+    <input id="religion" placeholder="Religion">
+
+    <input id="blood" placeholder="Blood Group">
+
+    <input id="studentIdNumber" placeholder="Student ID">
+
+    <input id="photo" placeholder="Photo URL">
+
+    <textarea
+      id="about"
+      placeholder="About the student"
+    ></textarea>
+
+    <button class="primary" id="saveBtn">
+      Add Student
+    </button>
+
+    <button id="cancelBtn" style="display:none">
+      Cancel
+    </button>
+
+  </div>
+
+
+  <div id="adminStudents"></div>
+
+
+  <div class="form">
+
+    <button id="logoutBtn">
+      Logout
+    </button>
+
+  </div>
+
+</div>
+
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
