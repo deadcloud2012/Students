@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <h1>🎓 Students</h1>
+  <p>Student Directory</p>
+
+  <button onclick="location.href='admin.html'">
+    🔐 Admin
+  </button>
+</header>
+
+<main>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="🔍 Search students..."
+  >
+
+  <div id="students" class="grid"></div>
+
+</main>
+
+
+<!-- Student Profile -->
+
+<div id="profileModal" class="modal">
+
+  <div class="profile">
+
+    <button class="close" onclick="closeProfile()">×</button>
+
+    <img id="profilePhoto" src="" alt="Student photo">
+
+    <h2 id="profileName"></h2>
+
+    <div class="info">
+
+      <p><strong>School:</strong>
+        <span id="profileSchool"></span>
+      </p>
+
+      <p><strong>Class:</strong>
+        <span id="profileClass"></span>
+      </p>
+
+      <p><strong>Roll:</strong>
+        <span id="profileRoll"></span>
+      </p>
+
+      <p><strong>Section:</strong>
+        <span id="profileSection"></span>
+      </p>
+
+      <p><strong>Student ID:</strong>
+        <span id="profileStudentId"></span>
+      </p>
+
+      <p><strong>Age:</strong>
+        <span id="profileAge"></span>
+      </p>
+
+      <p><strong>Date of Birth:</strong>
+        <span id="profileDob"></span>
+      </p>
+
+      <p><strong>Gender:</strong>
+        <span id="profileGender"></span>
+      </p>
+
+      <p><strong>Religion:</strong>
+        <span id="profileReligion"></span>
+      </p>
+
+      <p><strong>Blood Group:</strong>
+        <span id="profileBlood"></span>
+      </p>
+
+      <p><strong>About:</strong></p>
+
+      <p id="profileAbout"></p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
